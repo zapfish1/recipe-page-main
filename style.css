@@ -28,7 +28,7 @@ body {
 h1,
 h2 {
   font-family: YoungSerif;
-  font-weight: bolder;
+  font-weight: bold;
 }
 h2 {
   color: hsl(14, 45%, 36%);
