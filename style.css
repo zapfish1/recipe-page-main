@@ -1,0 +1,129 @@
+/* fonts used */
+
+@font-face {
+  font-family: Outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+/* background and body */
+
+html {
+  background-color: hsl(30, 54%, 90%);
+  font-family: Outfit;
+  color: hsl(24, 5%, 18%);
+}
+body {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+/* setting up fonts and colors for the headings */
+
+h1,
+h2 {
+  font-family: YoungSerif;
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+/* setting up image */
+
+img {
+  box-sizing: border-box;
+  border-radius: 1.2rem;
+  width: 100%;
+}
+
+/* some words are bolder than others so i used spans, as well as specified the table spans to color them */
+
+span {
+  font-weight: bold;
+}
+
+table span {
+  color: hsl(14, 45%, 36%);
+}
+
+/* the preparation section had a different background color */
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+/* lists had their own padding */
+
+ul,
+ol,
+li {
+  padding-left: 1rem;
+}
+
+/* here i modified the markers/bullets */
+
+ul li::marker {
+  font-size: 0.6em;
+}
+
+.preparation ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.ingredients ul {
+  list-style-type: square;
+}
+
+.ingredients ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+  font-weight: bolder;
+  color: hsl(14, 45%, 36%);
+}
+
+/* setting up lines with border bottom */
+
+.ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem;
+}
+
+.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem;
+}
+
+table tr td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem;
+}
+
+/* table layout */
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* since i used a mobile-first approach this media query is supposed to give specs for displaying on desktop */
+
+@media screen and (min-width: 650px) {
+  body {
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
